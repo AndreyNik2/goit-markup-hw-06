@@ -797,6 +797,12 @@ margin-left: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-close-btn:hover .close-btn-svg, 
+.modal-close-btn:focus .close-btn-svg{
+    fill: #2196F3;
 }
 
 .modal-title{
@@ -808,7 +814,7 @@ margin-left: 70px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .label-modal{
@@ -840,7 +846,7 @@ margin-left: 70px;
     margin-bottom: 10px;
 }
 
-.modal-lebel {
+.modal-label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
@@ -871,6 +877,10 @@ margin-left: 70px;
 
 .modal-input:focus + .modal-icon {
     fill: #2196F3;
+}
+
+.modal-input-name{
+    margin-bottom: 4px;
 }
 
 .modal-text {
@@ -908,6 +918,7 @@ form>.modal-field:nth-child(4) {
 }
 
 .privacy-wraper {
+    margin-left: 14px;
     box-sizing: border-box;
     width: 16px;
     height: 15px;
@@ -957,8 +968,7 @@ form>.modal-field:nth-child(5) {
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
-    padding: 10px 32px;
-    min-width: 200px;
+    padding: 10px 55px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
